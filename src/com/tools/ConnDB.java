@@ -16,8 +16,6 @@ public class ConnDB {
 	private static String dbPwd = "123456";	//登录SQL Server的密码
 	/**
 	 * 功能：创建与数据库的连接
-	 *
-	 * @return
 	 */
 	public static Connection getConnection() {
 		Connection conn = null;// 声明数据库连接对象
@@ -36,9 +34,6 @@ public class ConnDB {
 
 	/**
 	 * 功能：更新数据
-	 *
-	 * @param sql
-	 * @return
 	 */
 	public int executeUpdate(String sql) {
 		int result = 0;// 更新数据的记录条数
@@ -61,9 +56,6 @@ public class ConnDB {
 
 	/**
 	 * 功能：根据指定的SQL语句查询数据
-	 *
-	 * @param sql
-	 * @return
 	 */
 	public ResultSet executeQuery(String sql) {
 		try {// 捕捉异常
@@ -99,7 +91,6 @@ public class ConnDB {
 
 	/**
 	 * 功能：测试数据库连接是否成功
-	 * @param args
 	 */
 	public static void main(String[] args) {
 		if (getConnection() != null) {//如果获取到数据库连接
@@ -108,9 +99,6 @@ public class ConnDB {
 	}
 	/**
 	 * 功能：更新数据后获取生成的自动编号
-	 *
-	 * @param sql
-	 * @return
 	 */
 	public int executeUpdate_id(String sql) {
 		int result = 0;

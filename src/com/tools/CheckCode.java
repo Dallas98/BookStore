@@ -9,10 +9,7 @@ import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 
-/**
- *
- * @author administrator
- */
+
 public class CheckCode extends HttpServlet {
 	public CheckCode() {
 		super();

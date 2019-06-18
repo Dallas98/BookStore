@@ -3,9 +3,6 @@ package com.tools;
 public class ChStr {
 	/**
 	 * 功能：解决中文乱码问题
-	 *
-	 * @param str
-	 * @return
 	 */
 	public String chStr(String str) {
 		if (str == null) { // 当变量str为null时
@@ -21,9 +18,6 @@ public class ChStr {
 	}
 	/**
 	 * 功能：显示文本中的回车换行、空格及保证HTML标记的正常输出
-	 *
-	 * @param str1
-	 * @return
 	 */
 	public String convertStr(String str1) {
 		if (str1 == null) {
