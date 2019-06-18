@@ -3,7 +3,7 @@ package com.tools;
 public class ChStr {
 	/**
 	 * 功能：解决中文乱码问题
-	 * 
+	 *
 	 * @param str
 	 * @return
 	 */
@@ -21,7 +21,7 @@ public class ChStr {
 	}
 	/**
 	 * 功能：显示文本中的回车换行、空格及保证HTML标记的正常输出
-	 * 
+	 *
 	 * @param str1
 	 * @return
 	 */

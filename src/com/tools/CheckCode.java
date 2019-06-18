@@ -39,7 +39,7 @@ public class CheckCode extends HttpServlet {
 		response.setContentType("image/jpeg");	// 指定生成的响应是图片
 		int width = 116;			//指定验证码的宽度
 		int height = 33;			//指定验证码的高度
-		
+
 		BufferedImage image = new BufferedImage(width, height,
 				BufferedImage.TYPE_INT_RGB);
 		Graphics g = image.getGraphics();       //获取Graphics类的对象
@@ -54,27 +54,27 @@ public class CheckCode extends HttpServlet {
 			int y = random.nextInt(height - 1);
 			int x1 = random.nextInt(3) + 1;
 			int y1 = random.nextInt(6) + 1;
-            g.drawLine(x, y, x + x1, y + y1);       //绘制直线
+			g.drawLine(x, y, x + x1, y + y1);       //绘制直线
 		}
-        /**************************画一条折线********************************/		
+		/**************************画一条折线********************************/
 		BasicStroke bs=new BasicStroke(2f,BasicStroke.CAP_BUTT,BasicStroke.JOIN_BEVEL);	//创建一个供画笔选择线条粗细的对象
 		Graphics2D g2d = (Graphics2D) g;    //通过Graphics类的对象创建一个Graphics2D类的对象
 		g2d.setStroke(bs);					//改变线条的粗细
 		g.setColor(Color.GRAY);		//设置当前颜色为预定义颜色中的灰色
-        int lineNumber=4;		//指定端点的个数
+		int lineNumber=4;		//指定端点的个数
 		int[] xPoints=new int[lineNumber];      //定义保存x轴坐标的数组
 		int[] yPoints=new int[lineNumber];      //定义保存x轴坐标的数组
-        //通过循环为x轴坐标和y轴坐标的数组赋值
+		//通过循环为x轴坐标和y轴坐标的数组赋值
 		for(int j=0;j<lineNumber;j++){
 			xPoints[j]=random.nextInt(width - 1);
 			yPoints[j]=random.nextInt(height - 1);
 		}
 		g.drawPolyline(xPoints, yPoints,lineNumber);    //绘制折线
-        /*******************************************************************/
+		/*******************************************************************/
 		String sRand = "";
 		// 输出随机的验证文字
-         for (int i = 0; i < 4; i++) {
-            char ctmp = (char)(random.nextInt(26) + 65);	//生成A~Z的字母
+		for (int i = 0; i < 4; i++) {
+			char ctmp = (char)(random.nextInt(26) + 65);	//生成A~Z的字母
 			sRand += ctmp;
 			Color color = new Color(20 + random.nextInt(110), 20 + random
 					.nextInt(110), 20 + random.nextInt(110));
@@ -100,7 +100,7 @@ public class CheckCode extends HttpServlet {
 		g.dispose();//销毁绘图类的对象
 		ImageIO.write(image, "JPEG", response.getOutputStream());//指定图片的格式为JPEG
 	}
-    	public void destroy() {
+	public void destroy() {
 		super.destroy();
 	}
 

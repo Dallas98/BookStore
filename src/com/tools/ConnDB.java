@@ -16,7 +16,7 @@ public class ConnDB {
 	private static String dbPwd = "123456";	//登录SQL Server的密码
 	/**
 	 * 功能：创建与数据库的连接
-	 * 
+	 *
 	 * @return
 	 */
 	public static Connection getConnection() {
@@ -36,7 +36,7 @@ public class ConnDB {
 
 	/**
 	 * 功能：更新数据
-	 * 
+	 *
 	 * @param sql
 	 * @return
 	 */
@@ -61,7 +61,7 @@ public class ConnDB {
 
 	/**
 	 * 功能：根据指定的SQL语句查询数据
-	 * 
+	 *
 	 * @param sql
 	 * @return
 	 */
@@ -77,7 +77,7 @@ public class ConnDB {
 		}
 		return rs;// 返回查询结果
 	}
-	
+
 	/**
 	 * 功能：关闭数据库连接
 	 */
@@ -108,7 +108,7 @@ public class ConnDB {
 	}
 	/**
 	 * 功能：更新数据后获取生成的自动编号
-	 * 
+	 *
 	 * @param sql
 	 * @return
 	 */
@@ -130,5 +130,5 @@ public class ConnDB {
 		}
 		return result;// 返回获取结果
 	}
-	
+
 }
