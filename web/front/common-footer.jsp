@@ -119,7 +119,7 @@
                         &nbsp;&nbsp;电话：132-6266-5507 | 地址：<a
                             href="https://map.baidu.com/poi/上海大学(宝山校区)/@13514235.605449438,3653600.1458146064,13.41z?uid=74aeaab37a6e83bc38221ca4&primaryUid=18021645409146285140&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&querytype=detailConInfo&da_src=shareurl">上海市宝山区大场镇上大路99号</a>
                 </small>
-                沪ICP备 1024996号-2 沪公网安备201906201024号
+                沪ICP备 996ICU号 阳鹏 台枫 朱炎凡 高鹏飞 李东浩
             </div>
         </div>
     </section>

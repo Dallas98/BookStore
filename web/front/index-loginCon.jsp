@@ -15,7 +15,8 @@
 				</p>
 			</div>
 			<div class="toolbar-ct-2">
-				<a href="orderList.jsp">我的订单</a>&nbsp;&nbsp; | &nbsp;&nbsp; 我的收藏
+				<a href="orderList.jsp">我的订单</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+				<a href="collection_null.jsp">我的收藏</a>
 			</div>
 		</div>
 	</div>
@@ -76,7 +77,7 @@
 			</div>
 			<div class="toolbar-ct-2">
 				<a href="orderList.jsp">我的订单</a>&nbsp;&nbsp; | &nbsp;&nbsp; <a
-					href="">我的收藏</a>
+					href="collection_null.jsp">我的收藏</a>
 			</div>
 		</div>
 	</div>
