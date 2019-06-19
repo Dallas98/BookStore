@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
 </head>
 <body>
-<b>51商城注册协议</b>
+<b>一间书屋注册协议</b>
 <pre>
 尊敬的用户，欢迎您注册成为本网站用户。在注册前请您仔细阅读如下服务条款：
 本服务协议双方为本网站与本网站用户，本服务协议具有合同效力。

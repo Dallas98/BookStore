@@ -22,7 +22,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=GBK">
-<title>我的购物车-神奇Book</title>
+<title>我的购物车-一间书屋</title>
 <link rel="stylesheet" href="css/mr-01.css" type="text/css">
 </head>
 
@@ -38,7 +38,7 @@
 				<div id="mrshop" class="mrshop common-home">
 					<div class="container_oc">
 						<div class="row">
-							<div id="content_oc" class="col-sm-12">
+							<div id="content_oc1" class="col-sm-12">
 								<h1>我的购物车</h1>
 								<!-- 显示购物车中的图书 -->
 								<div class="table-responsive cart-info">
@@ -117,7 +117,7 @@
 
 						<!-- 填写物流信息 -->
 						<div class="row">
-							<div id="content_oc" class="col-sm-12">
+							<div id="content_oc2" class="col-sm-12">
 								<h1>物流信息</h1>
 								<!-- 填写物流信息的表单 -->
 								<form action="cart_order.jsp" method="post" id="myform">
@@ -167,7 +167,7 @@
 						<br />
 						<!-- 显示支付方式 -->
 						<div class="row">
-							<div id="content_oc" class="col-sm-12">
+							<div id="content_oc3" class="col-sm-12">
 								<h1>支付方式</h1>
 								<div class="table-responsive cart-info">
 									<table class="table table-bordered">

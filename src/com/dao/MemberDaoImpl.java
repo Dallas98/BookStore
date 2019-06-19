@@ -64,7 +64,7 @@ public class MemberDaoImpl implements MemberDao {
 
     // Ö´ÐÐÐÞ¸Ä²Ù×÷
     public int update(Member m) {
-        int ret = -1;
+        int ret ;
         try {
             String sql = "update tb_member set TrueName='" + chStr.chStr(m.getTruename()) + "',UserName='"
                     + chStr.chStr(m.getUsername()) + "',PassWord='" + chStr.chStr(m.getPwd()) + "',City='"

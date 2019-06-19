@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/com/dao/BookDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/BookDaoImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/MemberDao.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/dao/MemberDaoImpl.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/model/Book.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/model/Bookelement.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/model/Member.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/tools/ChStr.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/tools/CheckCode.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/com/tools/ConnDB.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/front/css/mr-01.css" charset="GBK" />
   </component>
 </project>

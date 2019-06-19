@@ -10,7 +10,7 @@
 		<div class="row">
 			<div class="toolbar-ct-1">
 				<p>
-					<i class="fa fa-phone"></i> <span style="margin-right: 15px;">电话：400-675-1066</span><a
+					<i class="fa fa-phone"></i> <span style="margin-right: 15px;">电话：132-6266-5507</span><a
 						href="login.jsp">登录</a>&nbsp; ｜ &nbsp;<a href="register.jsp">注册</a>
 				</p>
 			</div>
@@ -69,7 +69,7 @@
 		<div class="row">
 			<div class="toolbar-ct-1">
 				<p>
-					<i class="fa fa-phone"></i> <span style="margin-right: 15px;">电话：400-675-1066</span>您好，<%=username%>
+					<i class="fa fa-phone"></i> <span style="margin-right: 15px;">电话：132-6266-5507</span>您好，<%=username%>
 					&nbsp; &nbsp;<a href="modifyMember.jsp">修改</a>&nbsp;&nbsp;
 					|&nbsp;&nbsp;<a href="logout.jsp">退出</a>
 				</p>

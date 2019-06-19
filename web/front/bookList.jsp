@@ -27,7 +27,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=GBK">
-<title>图书列表-神奇Book</title>
+<title>图书列表-一间书屋</title>
 <link rel="stylesheet" href="css/mr-01.css" type="text/css">
 <script src="js/jsArr01.js" type="text/javascript"></script>
 

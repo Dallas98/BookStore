@@ -11,9 +11,9 @@ public class ConnDB {
 	public Statement stmt = null;	//Statement对象，用于执行SQL语句
 	public ResultSet rs = null;		//结果集对象
 	private static String dbClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";	//驱动类的类名
-	private static String dbUrl = "jdbc:sqlserver://localhost:1433;DatabaseName=db_book";
+	private static String dbUrl = "jdbc:sqlserver://139.196.142.221:1433;DatabaseName=db_book";
 	private static String dbUser = "sa";	//登录SQL Server的用户名
-	private static String dbPwd = "123456";	//登录SQL Server的密码
+	private static String dbPwd = "YP072860las";	//登录SQL Server的密码
 	/**
 	 * 功能：创建与数据库的连接
 	 */
