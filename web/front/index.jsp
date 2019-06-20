@@ -70,19 +70,19 @@
                                 <div class="slideshow">
                                     <div id="slidershow" class="nivoSlider">
                                         <a href="#" class="nivo-imageLink" style="display: block;"><img
-                                                src="images/img1.png" class="img-responsive"
-                                                style="display: none;"> </a> <a href="#"
-                                                                                class="nivo-imageLink"
-                                                                                style="display: none;"> <img
-                                            src="images/img2.png" class="img-responsive"
-                                            style="display: none;">
-                                    </a> <a href="#" class="nivo-imageLink" style="display: none;">
-                                        <img src="images/img3.png" class="img-responsive"
-                                             style="display: none;">
-                                    </a> <a href="#" class="nivo-imageLink" style="display: none;">
-                                        <img src="images/img4.png" class="img-responsive"
-                                             style="display: none;">
-                                    </a>
+                                                src="images/img1.jpg" class="img-responsive"
+                                                style="display: none;"> </a>
+                                        <a href="#" class="nivo-imageLink" style="display: none;">
+                                            <img src="images/img2.jpg" class="img-responsive" style="display: none;">
+                                        </a>
+                                        <a href="#" class="nivo-imageLink" style="display: none;">
+                                            <img src="images/img4.jpg" class="img-responsive"
+                                                 style="display: none;">
+                                        </a>
+                                        <a href="#" class="nivo-imageLink" style="display: none;">
+                                            <img src="images/img4.png" class="img-responsive"
+                                                 style="display: none;">
+                                        </a>
                                     </div>
                                 </div>
                                 <script type="text/javascript">
