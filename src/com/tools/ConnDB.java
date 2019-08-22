@@ -13,7 +13,7 @@ public class ConnDB {
 	private static String dbClassName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";	//驱动类的类名
 	private static String dbUrl = "jdbc:sqlserver://139.196.142.221:1433;DatabaseName=db_book";
 	private static String dbUser = "sa";	//登录SQL Server的用户名
-	private static String dbPwd = "";	//登录SQL Server的密码
+	private static String dbPwd = "YP072860las";	//登录SQL Server的密码
 	/**
 	 * 功能：创建与数据库的连接
 	 */

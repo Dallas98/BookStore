@@ -243,7 +243,7 @@
             + '<p>扫一扫支付</p>'
             + '<strong>￥<font id="show_money_info"><%=sumString%>元</font></strong>'
             + '<div style="width: 256px; height: 250px; text-align: center; margin-left: auto; margin-right: auto;" >'
-            + '<image src="images/qr.png" width="256" height="256" /></div>'
+            + '<image src="images/YP.jpg" width="256" height="256" /></div>'
             + '</div><p style="text-align:center">请注意支付安全</p>';
         var content = {
             state1: {

@@ -27,6 +27,8 @@
         String bookName = "";
         float price = 0;
         String orderDate = "";
+        int isSend=0;
+        String Send = "";
 %>
 <%@ page contentType="text/html; charset=GBK" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -73,6 +75,7 @@
                                         <td class="text-center quantity">收货人姓名</td>
                                         <td class="text-center price">收货人手机</td>
                                         <td class="text-center total">下单日期</td>
+                                        <td class="text-center total">物流状态</td>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -86,6 +89,13 @@
                                             price = rs.getFloat("price");
                                             orderDate = rs.getString("orderDate");
                                             orderDate = orderDate.substring(0, 16);
+                                            isSend = rs.getInt("isSend");
+                                            if(isSend==1){
+                                                Send="暂未发货";
+                                            }
+                                            else if(isSend==0){
+                                                Send="已发货";
+                                            }
                                     %>
                                     <tr>
                                         <td class="text-center image" width="10%"><%=orderID%>
@@ -100,6 +110,9 @@
                                         <td class="text-center quantity"><%=tel%>
                                         </td>
                                         <td class="text-center quantity"><%=orderDate%>
+                                        </td>
+                                        </td>
+                                        <td class="text-center quantity"><%=Send%>
                                         </td>
                                     </tr>
                                     <%

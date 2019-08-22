@@ -1,8 +1,9 @@
 <%@ page contentType="text/html; charset=GBK" language="java" import="java.sql.*" errorPage="" %>
-<jsp:useBean id="conn" scope="page" class="com.tools.ConnDB"/>
+<jsp:useBean id="conn" scope="request" class="com.tools.ConnDB"/>
+
 <%
     StringBuffer sql = new StringBuffer();
-    sql.append("select * from tb_order t1,tb_order_detail t2,tb_book t3 where 1=1 and t1.OrderID=t2.orderID and t3.ID=t2.bookID ");
+    sql.append("select * from tb_order t1,tb_order_detail t2,tb_book t3 where 1=1 and t1.OrderID=t2.orderID and t3.ID=t2.bookID order by t1.OrderDate DESC");
     String orderId = request.getParameter("orderId");
     if (orderId != null && !orderId.equals("0") && !orderId.equals("")) {
         sql.append(" and t1.OrderID =" + Integer.parseInt(orderId) + "  ");
@@ -19,7 +20,10 @@
     String tel = "";
     String orderDate = "";
     String bz = "";
-    //int enforce = 0;
+    int isSend = 0;
+    String Send ="";
+
+
 %>
 <html>
 <head>
@@ -112,10 +116,11 @@
     <tr align="center">
         <td width="8%" height="30">订单号</td>
         <td width="20%">产品名称</td>
-        <td width="8%">数量</td>
+        <td width="7%">数量</td>
         <td width="10%">收货人</td>
         <td width="15%">电话</td>
-        <td width="26%">下单日期</td>
+        <td width="18%">下单日期</td>
+        <td width="9%">是否发货</td>
     </tr>
     <%
         int maxPage = 0;
@@ -140,6 +145,14 @@
             tel = rs.getString("tel");
             orderDate = rs.getString("orderDate");
             orderDate = orderDate.substring(0, 16);
+            isSend = rs.getInt("isSend");
+
+            if(isSend==0){
+                Send="暂未发货";
+            }
+            else if(isSend==1){
+                Send="已发货";
+            }
     %>
     <tr align="center">
         <td height="24"><a href="order_detail.jsp?ID=<%=orderID%>"><%=orderID%>
@@ -154,8 +167,27 @@
         </td>
         <td><%=orderDate%>
         </td>
+        <td><button type="submit" class="btn btn-primary pull-left"
+                    id="<%=orderID%>" class="btn btn-primary login" onclick='javascript:innerHTML = "已发货"; '
+        >
+            <%=Send%>
+            <%
+                try {
+                    String sql1 = "update tb_order set isSend='1' where OrderID =''";
+                    request.setCharacterEncoding("GBK");
+                    conn.executeUpdate(sql1);
+
+                }catch (Exception e){
+
+                }
+
+            %>
+        </button></td>
+
 
     </tr>
+
+
     <%
             try {
                 if (!rs.next()) {
